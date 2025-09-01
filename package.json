@@ -1,15 +1,19 @@
 {
-  "name": "mongodb_crud_project",
+  "name": "mongodb-crud-project",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple Node.js project demonstrating CRUD operations with MongoDB",
+  "main": "myApp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node myApp.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "mongodb",
+    "crud",
+    "nodejs"
+  ],
+  "author": "Your Name",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^6.18.0"
+    "mongodb": "^6.0.0"
   }
 }
