@@ -1,17 +1,16 @@
 const { MongoClient, ObjectId } = require("mongodb");
 
-// 🔹 Local MongoDB (change if you're using Atlas)
+// Local MongoDB URI (change if using Atlas)
 const url = "mongodb://127.0.0.1:27017";
 const client = new MongoClient(url);
 
 async function run() {
   try {
     await client.connect();
-
     const db = client.db("contact");
     const collection = db.collection("contactlist");
 
-    // Reset collection (avoid duplicates)
+    // Reset collection to avoid duplicates
     await collection.deleteMany({});
 
     // Insert documents
